@@ -1,3 +1,20 @@
 This is file2...
 
+I'm working on a team with a few developers using git on BitBucket. We are all working on a dev branch, not pushing to master until a release.
+
+One of the developers committed incorrect code that overwrote my own by accident, and now I am trying to push the correct code back to the repo. I have been reading about this error for a few days now, I can't push to the repo anymore because I am getting the following error:
+
+ ! [rejected]        master -> dev (fetch first)
+error: failed to push some refs to 'https://myusername@bitbucket.org/repo_user/repo_name.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+I follow the instructions and pull, but then I receive a merge conflict. After entering a message for the merge conflict, my local code is now the incorrect code that the other developer uploaded by accident (as expected from the pull). So I replace the incorrect code with the backup I copied before committing, and when I try to push again, I get the same error.
+
+Chganged file2
+
+
 
